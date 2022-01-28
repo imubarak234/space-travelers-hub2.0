@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 const RocketDisplay = (props) => {
   const {
     names, desc, images, change, id, buttonClass, buttonInfo, isReserved,

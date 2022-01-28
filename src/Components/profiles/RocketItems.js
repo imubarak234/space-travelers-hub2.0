@@ -8,7 +8,7 @@ const RocketItems = (props) => {
   return (
     <li className="list-group-item p-3 lead">
       <p>{names}</p>
-      <button type="button" className="btn btn-secondary btn-sm" onClick={rocket(ids)}>Cancel Reservation</button>
+      <button type="button" className="btn btn-secondary btn-sm" onClick={() => rocket(ids)}>Cancel Reservation</button>
       <a href={wiki} className="btn btn-light btn-sm" target="_blank" rel="noreferrer">wiki</a>
     </li>
   );

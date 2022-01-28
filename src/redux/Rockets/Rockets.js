@@ -1,6 +1,7 @@
 const ADD_ROCKET = 'space-travelers-hub/rockets/ADD_ROCKET';
 const RESERVE_ROCKET = 'space-travelers-hub/rockets/RESERVE_ROCKET';
 const initialState = [];
+
 export const addRocket = (payload) => ({
   type: ADD_ROCKET,
   payload,

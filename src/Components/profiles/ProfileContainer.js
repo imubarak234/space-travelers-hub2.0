@@ -1,6 +1,7 @@
+/* eslint-disable no-console */
 
 import React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
+import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import MissionsList from './MissionsList';
 import RocketList from './RocketList';
 import { reserveMission } from '../../redux/Missions/Missions';
@@ -13,14 +14,21 @@ const ProfileContainer = () => {
   const newStates = states.filter((next) => next.reserved);
   const newStatesR = statesR.filter((next) => next.reserved);
 
-   const dispatch = useDispatch();
+  console.log(states);
+  console.log(statesR);
+
+  console.log('------------------------------------');
+  console.log(newStates);
+  console.log(newStatesR);
+
+  const dispatch = useDispatch();
 
   const missions = (ids) => {
-     dispatch(reserveMission(ids));
+    dispatch(reserveMission(ids));
   };
 
   const rockets = (ids) => {
-     dispatch(reserveRocket(ids));
+    dispatch(reserveRocket(ids));
   };
 
   return (

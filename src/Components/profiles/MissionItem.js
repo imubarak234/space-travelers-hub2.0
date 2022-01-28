@@ -8,7 +8,7 @@ const MissionItem = (props) => {
   return (
     <li className="list-group-item p-3 lead">
       <p>{names}</p>
-      <button type="button" className="btn btn-info btn-sm" onClick={missions(ids)}>Leave Mission</button>
+      <button type="button" className="btn btn-info btn-sm" onClick={() => missions(ids)}>Leave Mission</button>
       <a href={wikis} className="btn btn-light btn-sm" target="_blank" rel="noreferrer">wiki</a>
     </li>
   );

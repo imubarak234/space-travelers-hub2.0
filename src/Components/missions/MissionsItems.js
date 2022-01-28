@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types';
 import './Mission.css';
+
 const MissionsItems = (props) => {
   const {
     name, description, classes, ids, booking, infos, btnClass, membersInfo, membersClass,
   } = props;
+
   return (
     <div className={classes}>
       <div className="col-2 bords">
@@ -21,6 +23,7 @@ const MissionsItems = (props) => {
     </div>
   );
 };
+
 MissionsItems.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -32,4 +35,5 @@ MissionsItems.propTypes = {
   membersInfo: PropTypes.string.isRequired,
   membersClass: PropTypes.string.isRequired,
 };
+
 export default MissionsItems;
