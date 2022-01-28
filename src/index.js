@@ -1,18 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Naver from './Components/Navbar';
 import Footer from './Components/Footer';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Naver />
-      <Routes />
-      <Footer />
-    </Router>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <Router>
+        <Naver />
+        <Routes>
+          <Route path="/" element={<RocketContainer />} />
+          <Route path="/missions" element={<MissionsContainer />} />
+          <Route path="/my-profile" element={<ProfileContainer />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root'),
 );
 
