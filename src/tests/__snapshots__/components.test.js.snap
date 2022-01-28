@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Series of tests rendering of each major components Rendering Missions page correctly 1`] = `
+<div
+  className="container-fluid h-auto py-5"
+>
+  <div
+    className="px-3 py-3"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-2 bords"
+      >
+        <p
+          className="h3"
+        >
+          Mission
+        </p>
+      </div>
+      <div
+        className="col-6 bords"
+      >
+        <p
+          className="h3"
+        >
+          Description
+        </p>
+      </div>
+      <div
+        className="col-2 bords"
+      >
+        <p
+          className="h3"
+        >
+          Status
+        </p>
+      </div>
+      <div
+        className="col-2 bords"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Series of tests rendering of each major components Rendering Profiles Page correctly 1`] = `
+<div
+  className="container w-100 d-flex"
+>
+  <div
+    className="w-50 me-3"
+  >
+    <h3
+      className="h3"
+    >
+      My Missions
+    </h3>
+    <ul
+      className="list-group"
+    />
+    <p
+      className="p-3 lead"
+    >
+      No Missions Reserved Yet
+    </p>
+  </div>
+  <div
+    className="w-50 ms-3"
+  >
+    <h3
+      className="h3"
+    >
+      My Rockets
+    </h3>
+    <ul
+      className="list-group"
+    />
+    <p
+      className="p-3 lead"
+    >
+      No Rockets Reserved Yet
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Series of tests rendering of each major components Rendering Rockets page correctly 1`] = `
+<div
+  className="container-fluid"
+/>
+`;
+
+exports[`Series of tests rendering of each major components rendering footer correctly 1`] = `
+<div
+  className="footers"
+>
+  <footer
+    className="bg-dark py-2"
+  >
+    <div
+      className="container"
+    >
+      <p
+        className="text-white text-center"
+      >
+        Copyright © 2022 designed by Mubarak A Ibrahim and Tumworobere Annah
+      </p>
+    </div>
+  </footer>
+</div>
+`;
+
+exports[`Series of tests rendering of each major components rendering of Navigation bar(Header) correctly 1`] = `
+<div
+  className="navs navigate"
+>
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-lignt lead"
+  >
+    <div
+      className="container"
+    >
+      <a
+        aria-current="page"
+        className="navbar-brand fw-normal d-flex active"
+        href="/"
+        id="title"
+        onClick={[Function]}
+      >
+        <img
+          alt="logo"
+          className="pe-3"
+          id="logos-img"
+          src="planet.png"
+        />
+        <h3>
+          Space Travelers‘ Hub
+        </h3>
+      </a>
+      <button
+        className="navbar-toggler"
+        data-bs-target="#navbar"
+        data-bs-toggle="collapse"
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        className="collapse navbar-collapse justify-content-end"
+      >
+        <ul
+          className="navbar-nav topnav"
+        >
+          <li
+            className="nav-item pe-4"
+          >
+            <a
+              aria-current="page"
+              className="nav-link fw-normal active"
+              href="/"
+              onClick={[Function]}
+            >
+              Rockets
+            </a>
+          </li>
+          <li
+            className="nav-item pe-4 "
+          >
+            <a
+              className="nav-link fw-normal"
+              href="/missions"
+              onClick={[Function]}
+            >
+              Missions
+            </a>
+          </li>
+          <li
+            className="list-child"
+          />
+          <li
+            className="nav-item pe-4"
+          >
+            <a
+              className="nav-link fw-normal"
+              href="/my-profile"
+              onClick={[Function]}
+            >
+              My Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
