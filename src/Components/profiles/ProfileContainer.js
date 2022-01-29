@@ -14,13 +14,6 @@ const ProfileContainer = () => {
   const newStates = states.filter((next) => next.reserved);
   const newStatesR = statesR.filter((next) => next.reserved);
 
-  console.log(states);
-  console.log(statesR);
-
-  console.log('------------------------------------');
-  console.log(newStates);
-  console.log(newStatesR);
-
   const dispatch = useDispatch();
 
   const missions = (ids) => {
