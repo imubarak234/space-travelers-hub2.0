@@ -24,7 +24,7 @@ In this task, we will be working with the real live data from the SpaceX API. Ou
 - Visual Studio Code
 - 
 ## Live Demo
-[Link]()
+[Link](https://space-travelers-hub2.herokuapp.com/)
 
 ## Getting Started
 **To clone this project**
