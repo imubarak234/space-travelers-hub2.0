@@ -2,10 +2,21 @@ import PropTypes from 'prop-types';
 import MissionsItems from './MissionsItems';
 import './Mission.css';
 
+/**
+ * @function MissionsGrid - Reccieves data from the missions container renders
+ * the the container tag and styling for the list of missions
+ * @param {props} list - Array of objects each object contains information on a given mission 
+ * @param {props} booking - A function to dispatch the mission booking to the redux store
+ */
 const MissionsGrid = (props) => {
   const { list, booking } = props;
   let count = 0;
 
+  /**
+   * @function changes - Depending on the count it returns names of Bootstrap classes
+   * @param {number} next - count either even or odd 
+   * @returns {string} - Bootstrap class
+   */
   const changes = (next) => {
     let ans = '';
     if ((next % 2) === 0) ans = 'row bg-light';
@@ -13,6 +24,11 @@ const MissionsGrid = (props) => {
     return ans;
   };
 
+  /**
+   * 
+   * @param {boolean} args - true  
+   * @returns 
+   */
   const buttonClass = (args) => {
     let ans = '';
     if (args) ans = 'btn btn-outline-danger';
