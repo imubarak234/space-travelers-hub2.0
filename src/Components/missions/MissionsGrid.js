@@ -4,7 +4,7 @@ import './Mission.css';
 
 /**
  * @function MissionsGrid - Reccieves data from the missions container renders
- * the the container tag and styling for the list of missions
+ * the HTML tags and styling for the list of missions
  * @param {props} list - Array of objects each object contains information on a given mission 
  * @param {props} booking - A function to dispatch the mission booking to the redux store
  */
@@ -25,9 +25,10 @@ const MissionsGrid = (props) => {
   };
 
   /**
-   * 
-   * @param {boolean} args - true  
-   * @returns 
+   * @function - Depending on the argument it returns a string representation of bootstrap classes
+   * @param {boolean} args - true or false depending on if the mission object
+   * recerved property 
+   * @returns {string} - Bootstrap class
    */
   const buttonClass = (args) => {
     let ans = '';
@@ -36,6 +37,12 @@ const MissionsGrid = (props) => {
     return ans;
   };
 
+  /**
+   * @function - Depending on the argument it returns a string of info to be displayed
+   * @param {boolean} args - true or false depending on if the mission object
+   * recerved property 
+   * @returns {string} - info to be displayed
+   */
   const buttonInfo = (args) => {
     let ans = '';
     if (args) ans = 'Leave Mission';
@@ -43,6 +50,12 @@ const MissionsGrid = (props) => {
     return ans;
   };
 
+  /**
+   * @function - Depending on the argument it returns a string of info to be displayed
+   * @param {boolean} args - true or false depending on if the mission object
+   * recerved property 
+   * @returns {string} - info to be displayed
+   */
   const memberButtonInfo = (args) => {
     let ans = '';
     if (args) ans = 'Active Member';
@@ -50,6 +63,12 @@ const MissionsGrid = (props) => {
     return ans;
   };
 
+  /**
+   * @function - Depending on the argument it returns a string representation of bootstrap classes
+   * @param {boolean} args - true or false depending on if the mission object
+   * recerved property 
+   * @returns {string} - Bootstrap class
+   */
   const memberButtonClass = (args) => {
     let ans = '';
     if (args) ans = 'btn btn-success';
