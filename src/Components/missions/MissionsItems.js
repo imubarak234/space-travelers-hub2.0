@@ -1,6 +1,15 @@
 import PropTypes from 'prop-types';
 import './Mission.css';
 
+/**
+ * 
+ * @param {props} name - title of mission 
+ * @param {props} description - description of the mission 
+ * @param {props} ids - id of the mission 
+ * @param {props} booking - booking boolean if object been booked 
+ * @param {props} infos - info to be displayed  
+ * @returns 
+ */
 const MissionsItems = (props) => {
   const {
     name, description, classes, ids, booking, infos, btnClass, membersInfo, membersClass,
